@@ -1,22 +1,45 @@
 {
-	"name": "framework",
+	"name": "gulpjs",
 	"version": "1.0.0",
-	"description": "",
+	"description": "gulp js practice",
 	"main": "index.js",
 	"scripts": {
-		"watch:sass": "node-sass css/scss/main.scss css/style.css -w",
-		"devserver": "live-server",
-		"start": "npm-run-all --parallel devserver watch:sass",
-		"compile:sass": "node-sass css/scss/main.scss css/style.comp.css",
-		"prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
-		"compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-		"build:css": "npm-run-all compile:sass prefix:css compress:css"
+		"watch": "gulp watch",
+		"server": "live-server --watch=build --open=build --ignore=src",
+		"start": "npm-run-all --parallel watch server"
 	},
-	"author": "",
+	"author": "Aishvarya",
 	"license": "ISC",
+	"dependencies": {
+		"del": "^5.1.0",
+		"gulp": "^4.0.2"
+	},
 	"devDependencies": {
-		"autoprefixer": "^9.7.3",
-		"npm-run-all": "^4.1.5",
-		"postcss": "^7.0.26"
+		"@babel/core": "^7.7.7",
+		"@babel/preset-env": "^7.7.7",
+		"@babel/register": "^7.7.7",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-file-include": "^2.1.1",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-uglify": "^3.0.2",
+		"npm-run-all": "^4.1.5"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all",
+			"last 10 versions"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
 	}
 }
