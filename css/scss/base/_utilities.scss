@@ -1,0 +1,32 @@
+.color-primary { color:$color-primary !important; }
+.color-secondary { color:$color-secondary !important; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.uppercase { text-transform:uppercase; }
+.nouppercase { text-transform:none !important; }
+.cursor { cursor: pointer; }
+
+
+.h2 {
+	font-size: 2.4rem;
+	color: #555555;
+	font-weight: 700;
+	margin-bottom: .5rem;
+}
+.h4 {
+	font-size: $large-font-size;
+	color: #555555;
+	font-weight: 900;
+	margin-bottom: .5rem;
+}
+.h5 {
+	font-size: $small-font-size;
+	color: #555555;
+	font-weight: 900;
+	margin-bottom: .5rem;
+}
+.p {
+	font-size: 1.2rem;
+	line-height: 1;
+}

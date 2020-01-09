@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+	font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+	
+	@media (max-width: $macbook) {
+		font-size: 59.375%;
+	}
+}
+
+body {
+	box-sizing: border-box;
+	background-color: $color-grey-light-1;
+}
+
+::selection {
+    color: $color-white;
+    background-color: $color-primary;
+}
+
+img { max-width:100%; }
+
+a {
+	color: $color-primary;
+	transition: all 400ms ease-out;
+	
+	&:hover {
+		text-decoration:none;
+	}
+}
+
+hr {
+	margin: 2rem 0;
+	border-color: #cacaca;
+
+	&.darkBorder {
+		border-color: #999;
+	}
+
+	&.extraSpace {
+		margin: 4rem 0;
+	}
+}
+
+// Hide HTML5 Up and Down arrows
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}

@@ -1,0 +1,27 @@
+// Default Loading ANIMATION KEYFRAMES
+@keyframes loading {
+    0% { transform: translateX(0) }
+    // 50% { transform: translateX(450%) }
+    100% { transform: translateX(1200%) }
+}
+
+// Stack ANIMATION KEYFRAMES
+@keyframes stackSlide {
+    from { right: -100%; }
+    to { right: 0; }
+}
+
+// Menu ANIMATION KEYFRAMES
+@keyframes SlideMenu {
+    from { left: -100%; }
+    to { left: 0; }
+}
+
+@keyframes moveDown {
+    0% { transform: translateY(-100%) }
+    100% { transform: translateY(0) }
+}
+@keyframes moveUp {
+    0% { transform: translateY(100%) }
+    100% { transform: translateY(0) }
+}

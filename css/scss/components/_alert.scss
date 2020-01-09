@@ -1,0 +1,58 @@
+.alert {
+    position: relative;
+    min-height: 1.6rem;
+    margin: 1.6rem 0;
+    line-height: 1.6rem;
+    border-radius: .2rem;
+    padding: 1.6rem 2rem;
+    background: #f8f8f9;
+    color: rgba(black, .87);
+    box-shadow: 0 0 0 1px rgba(34,36,38,.22) inset, 0 0 0 0 transparent;
+    transition: opacity .1s ease,color .1s ease,
+                background .1s ease,
+                box-shadow .1s ease,-webkit-box-shadow .1s ease;
+
+    &-success {
+        background-color: #fcfff5;
+        color: #2c662d;
+        -webkit-box-shadow: 0 0 0 .1rem #a3c293 inset, 0 0 0 0 transparent;
+        box-shadow: 0 0 0 .1rem #a3c293 inset, 0 0 0 0 transparent;
+    }
+
+    &-error {
+        background-color: #fff6f6;
+        color: #9f3a38;
+        -webkit-box-shadow: 0 0 0 .1rem #e0b4b4 inset, 0 0 0 0 transparent;
+        box-shadow: 0 0 0 .1rem #e0b4b4 inset, 0 0 0 0 transparent;
+    }
+
+    &-warning {
+        background-color: #fffaf3;
+        color: #573a08;
+        -webkit-box-shadow: 0 0 0 .1rem #c9ba9b inset, 0 0 0 0 transparent;
+        box-shadow: 0 0 0 .1rem #c9ba9b inset, 0 0 0 0 transparent;
+    }
+
+    &-info {
+        background-color: #f6faff;
+        color: #386a9f;
+        -webkit-box-shadow: 0 0 0 .1rem #b4c0e0 inset, 0 0 0 0 transparent;
+        box-shadow: 0 0 0 .1rem #b4c0e0 inset, 0 0 0 0 transparent;
+    }
+
+    &-positioned {
+        position: absolute;
+        z-index: 9999;
+        min-width: 50rem;
+        
+        &.bottom { bottom: 4rem; }
+        &.right { right: 4rem; }
+        &.left { left: 4rem; }
+        &.top { top: 4rem; }
+
+        &.center {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
