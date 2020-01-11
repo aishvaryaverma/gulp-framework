@@ -1,8 +1,8 @@
 const getRoundOf = num => console.log(parseInt(num / 10) * 10);
-getRoundOf(43);
-getRoundOf(31);
-getRoundOf(59);
-getRoundOf(65);
+// getRoundOf(43);
+// getRoundOf(31);
+// getRoundOf(59);
+// getRoundOf(65);
 
 const checkRange = num => {
     const range0 = parseInt(num / 10);
@@ -18,8 +18,8 @@ const checkRange = num => {
     }
 }
 
-checkRange(43);
-checkRange(99);
-checkRange(257);
-checkRange(650);
-checkRange(1); 
+// checkRange(43);
+// checkRange(99);
+// checkRange(257);
+// checkRange(650);
+// checkRange(1);

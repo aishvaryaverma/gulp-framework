@@ -12,18 +12,18 @@ export const scripts = () => {
     return src(paths.scripts.src)
         .pipe(sourcemaps.init())
         .pipe(babel({presets: ['@babel/env']}))
-        .pipe(concat('all.js'))
-        // .pipe(uglify())
-        .pipe(sourcemaps.write('.'))
-        .pipe(dest(paths.scripts.dest))
-};
-
-export const scriptsProduction = () => {
-    return src(paths.scripts.src)
-        .pipe(sourcemaps.init())
-        .pipe(babel({presets: ['@babel/env']}))
         .pipe(concat('app.min.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('.'))
         .pipe(dest(paths.scripts.dest))
 };
+
+// export const scriptsProduction = () => {
+//     return src(paths.scripts.src)
+//         .pipe(sourcemaps.init())
+//         .pipe(babel({presets: ['@babel/env']}))
+//         .pipe(concat('app.min.js'))
+//         .pipe(uglify())
+//         .pipe(sourcemaps.write('.'))
+//         .pipe(dest(paths.scripts.dest))
+// };

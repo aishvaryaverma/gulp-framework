@@ -1,13 +1,13 @@
 import { src, dest, watch, series, parallel } from 'gulp';
 import del from 'del';
-import { styles, stylesProduction } from './gulpjs/gulp-styles';
-import { scripts, scriptsProduction } from './gulpjs/gulp-scripts';
+import { styles } from './gulpjs/gulp-styles';
+import { scripts } from './gulpjs/gulp-scripts';
 import { htmlInclude } from './gulpjs/gulp-html';
 
 // Paths
 export const paths = {
     styles: {
-        src: './src/css/**/*.scss',
+        src: './src/scss/**/*.scss',
         dest: 'build/css/'
     },
     scripts: {
@@ -40,7 +40,7 @@ export { htmlInclude as html };
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-export const build = series(clean, parallel(htmlInclude, stylesProduction, scriptsProduction));
+export const build = series(clean, parallel(htmlInclude, styles, scripts));
 
 /*
  * Define default task that can be called by just running `gulp` from cli

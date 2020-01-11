@@ -12,9 +12,8 @@ class Person {
 const person1 = new Person('Aashu', 1993, 'Front end Developer')
 const person2 = new Person('Pooja', 1994, 'Hoursewife')
 
-console.log(person1);
-console.log(person2);
-
+// console.log(person1);
+// console.log(person2);
 
 // Object.keys()
 var family = {
@@ -24,4 +23,4 @@ var family = {
     d: 'S'
 };
 
-console.log(Object.keys(family))
+// console.log(Object.keys(family))

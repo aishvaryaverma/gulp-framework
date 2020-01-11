@@ -1,2 +1,25 @@
-body{margin:0;background:#f5f5f5}h1{font-size:50px;-webkit-transition:all 1s ease-out;-o-transition:all 1s ease-out;transition:all 1s ease-out}h1 span{font-size:24px;color:red}
+body {
+  margin: 0;
+  text-align: center;
+  background: #f5f5f5; }
+
+header {
+  padding: 2rem;
+  text-align: center; }
+  header a {
+    display: inline-block;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none; }
+
+h1 {
+  margin: 0;
+  font-size: 50px; }
+  h1 span {
+    font-size: 24px;
+    color: red; }
+
+footer {
+  padding: 2rem; }
+
 /*# sourceMappingURL=style.min.css.map */
