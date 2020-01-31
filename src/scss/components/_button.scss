@@ -1,0 +1,155 @@
+// Buttons
+.btn {
+	display: inline-block;
+	font-family: $font-family-tertiary;
+	border: none;
+	line-height: 1;
+	font-size: 1.4rem;
+	box-shadow: none;
+	border-radius: 0;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 1.4rem 3rem;
+	text-transform: uppercase;
+	transition: all .4s ease-out;
+	
+	&.btn-block {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	
+	// Rounded
+	&.elipse { border-radius: 25px; }
+	&.rounded-3 { border-radius: 3px; }
+	&.rounded-4 { border-radius: 4px; }
+	&.rounded-5 { border-radius: 5px; }
+
+	// Buttons Sizes
+	&.btn-sm {
+		font-size: 1.4rem;
+		padding: 1rem 2.5rem;
+	}
+	&.btn-lg {
+		font-size: 1.7rem;
+		padding: 1.5rem 3rem;
+	}
+	
+	// Buttons Colors
+	&.btn-primary {
+		position: relative;
+		z-index: 1;
+		color: white;
+		background: $color-primary;
+		box-shadow: none !important;
+
+		&:hover {
+			background: darken($color-primary, 15%);
+			
+		}
+	}
+	&.btn-secondary {
+		background: $color-secondary;
+		color:#fff;
+		
+		&:hover {
+			background: darken($color-secondary, 5%);
+		}
+	}
+	&.btn-default {
+		color: #333333;
+		background: $color-grey-light-1;
+
+		&.white { color: white; }
+		
+		&:hover {
+			background: darken($color-grey-light-1, 15%);
+		}
+	}
+	&.btn-border {
+		color:#232323;
+		border:solid #909090 1px;
+		
+		&:hover {
+			color: white;
+			background:$color-primary;
+			border-color: $color-primary;
+		}
+	}
+	&.btn-border-primary {
+		color: $color-primary;
+		border:solid $color-primary 1px;
+		
+		&:hover {
+			color: white;
+			background:$color-primary;
+		}
+	}
+	&.btn-border-white {
+		color:#fff;
+		border:solid #fff 1px;
+		
+		&.rounded {
+			border-radius: 2.5rem;
+		}
+		
+		&:hover {
+			background:#fff;
+			color:#222;
+		}
+	}
+	&.btn-dark {
+		color:#fff;
+		background: #676767;
+		
+		&:hover {
+			background: #232323;
+		}
+	}
+	&.btn-white {
+		color:#333;
+		background:#fff;
+		
+		&:hover {
+			color:#fff;
+			background:$color-primary;
+		}
+	}
+
+	@media (max-width: $tablet-big) {
+		font-size: 1.3rem;
+		padding: 1.2rem 2.4rem;
+	}
+}
+
+// Arrow Button
+.btn-custom-style {
+	position: relative;
+    z-index: 1;
+	display: block;
+	font-family: $font-family-tertiary;
+	font-size: 1.2rem;
+	color: black;
+	padding-right: 4rem;
+	white-space: nowrap;
+	background: none;
+	border: none;
+	text-transform: uppercase;
+	transition: none;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 0;
+		z-index: -1;
+		width: 3rem;
+		height: .1rem;
+		background: black;
+		transform: translateY(-50%);
+	}
+
+	&:hover {
+		color: $color-secondary;
+		&:after { background: $color-secondary; }
+	}
+}

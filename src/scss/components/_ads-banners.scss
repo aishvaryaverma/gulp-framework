@@ -1,0 +1,87 @@
+.adsBanners {
+    display: flex;
+
+    &--white { background: white; }
+    &--grey { background: $color-grey-dark; }
+
+    figure {
+        position: relative;
+        z-index: 1;
+        width: 60%;
+        margin: 0;
+
+        .placeholder {
+            position: absolute;
+            right: 5rem;
+            bottom: 5rem;
+            text-align: right;
+        }
+
+        @media (max-width: $tablet-small) {
+            width: 100%;
+            overflow: hidden;
+            max-height: 32rem;
+            
+            img { width: 100%; }
+
+            .placeholder {
+                bottom: 2rem;
+                right: 2rem;
+            }
+        }
+        @media (max-width: $mobile-medium) {
+            max-height: 100%;
+        }
+    }
+
+    &__textBox {
+        width: 40%;
+        display: flex;
+        padding: 2rem 8rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .labelSmall {
+            font-family: $font-family-tertiary;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: .5rem;
+            text-transform: uppercase;
+            
+            &--white { color: white; }
+        }
+        
+        h2 {
+            font-size: 5.6rem;
+            line-height: 1;
+        }
+        p { color: #6e767e; }
+
+        @media (max-width: $small-laptop) {
+            padding: 2rem 5rem;
+
+            h2 { font-size: 4.2rem; }
+        }
+        @media (max-width: $tablet) {
+            padding: 2rem 4rem;
+
+            h2 { font-size: 4rem; }
+        }
+
+        @media (max-width: $tablet-small) {
+            width: 100%;
+            padding: 4rem;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: $tablet-small) {
+        flex-direction: column;
+
+        &--grey {
+            flex-direction: column-reverse;
+        }
+    }
+}

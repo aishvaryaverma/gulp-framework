@@ -1,0 +1,62 @@
+.sideBar {
+    padding: 3rem;
+    background: #f1f1f1;
+
+    &__search {
+        margin-bottom: 3rem;
+
+        .form-control {
+            height: 4.6rem;
+            font-size: 1.7rem;
+            padding: 1.2rem 1.2rem 1.2rem 5rem;
+            background: image('svg/search.svg') 2rem center no-repeat white;
+            background-size: 1.8rem;
+            border: 1px solid #ddd;
+            border-radius: 0;
+        }
+    }
+
+    &__blogList {
+        padding: 0;
+
+        ul {
+            padding: 0;
+            overflow: auto;
+            max-height: 60rem;
+
+            li {
+                display: flex;
+                margin-bottom: 1.5rem;
+                padding-bottom: 1.5rem;
+                align-items: flex-start;
+                border-bottom: 1px solid #ccc;
+
+                &:last-child { border-bottom: none; }
+
+                figure {
+                    margin: 0;
+                    flex-shrink: 1;
+                    flex-basis: 12rem;
+
+                    @media (max-width: $mobile-medium) {
+                        flex-basis: 9rem;
+                    }
+                }
+                .textBox {
+                    flex-grow: 1;
+                    padding-left: 1rem;
+
+                    .title {
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+
+                        @media (max-width: $mobile-medium) {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .date { font-size: 1.3rem; }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.innerPage {
+    padding: 6rem;
+    border-bottom: 1px solid #ddd;
+
+    @media (max-width: $mobile-big) {
+        padding: 5rem 0;
+    }
+}

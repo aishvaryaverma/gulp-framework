@@ -13,10 +13,6 @@ export const styles = () => {
     return src(paths.styles.src)
         .pipe(sourcemaps.init())
         .pipe(sass())
-        // Add browser list in package json as recommended
-        // .pipe(autoprefixer({ cascade: false, overrideBrowserslist: ['last 10 versions'] }))
-        // .pipe(autoprefixer({ cascade: false }))
-        // .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(rename({
             basename: 'style',
             suffix: '.min'
@@ -25,18 +21,17 @@ export const styles = () => {
         .pipe(dest(paths.styles.dest))
 };
 
-// export const stylesProduction = () => {
-//     return src(paths.styles.src)
-//         .pipe(sourcemaps.init())
-//         .pipe(sass())
-//         // Add browser list in package json as recommended
-//         // .pipe(autoprefixer({ cascade: false, overrideBrowserslist: ['last 10 versions'] }))
-//         .pipe(autoprefixer({ cascade: false }))
-//         .pipe(cleanCSS({compatibility: 'ie8'}))
-//         .pipe(rename({
-//             basename: 'style',
-//             suffix: '.min'
-//         }))
-//         .pipe(sourcemaps.write('.'))
-//         .pipe(dest(paths.styles.dest))
-// };
+export const stylesProd = () => {
+    return src(paths.styles.src)
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        // Add browser list in package json as recommended
+        .pipe(autoprefixer({ cascade: false }))
+        // .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(rename({
+            basename: 'style',
+            suffix: '.min'
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(dest(paths.styles.dest))
+};

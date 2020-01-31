@@ -1,0 +1,16 @@
+.custom-table {
+    margin: 0;
+    font-size: $normal-font-size;
+
+    th, td {
+        padding: 1.5rem;
+        border: none;
+        vertical-align: middle;
+    }
+
+    &.table-striped tbody tr:nth-of-type(odd) {
+        background-color: $color-grey-light-3;
+    }
+
+
+}

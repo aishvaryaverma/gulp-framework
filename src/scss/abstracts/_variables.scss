@@ -1,0 +1,73 @@
+// COLORS
+$color-primary: #c6a774;
+$color-primary-light: #c6a774;
+$color-primary-dark: #c6a774;
+
+$color-secondary: #052a59;
+$color-secondary-light: #052a59;
+$color-secondary-dark: #052a59;
+
+$color-tertiary: #121213;
+
+$color-skyblue-light: #f4f9ff;
+
+$color-grey-light-1: #abadb0;
+$color-grey-light-2: #f1f1f1;
+$color-grey-light-3: #f8f7fd;
+
+$color-grey-dark: #1d2630;
+$color-grey-dark-2: #666;
+$color-grey-dark-3: #333;
+
+$color-green: #00a900;
+$color-green-dark: #248e2e;
+
+$color-green2: #38c172;
+
+$color-red: #ff0000;
+$color-red-dark: #ff0000;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// FONT FAMILY
+$font-family-primary: 'Barlow', sans-serif;
+$font-family-secondary: 'Prata', serif;
+$font-family-tertiary: 'Barlow Condensed', sans-serif;
+
+// FONT SIZES
+$tiny-font-size: 1.1rem;
+$small-font-size: 1.3rem;
+$medium-font-size: 1.4rem;
+$normal-font-size: 1.5rem;
+$large-font-size: 1.8rem;
+$big-font-size: 2.4rem;
+$huge-font-size: 3rem;
+
+
+// FONT WEIGHT
+$font-normal: normal;
+$font-light: 300;
+$font-semi: 500;
+$font-bold: 600;
+$font-black: 700;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+$gutter-vertical-small: 6rem;
+
+// VIEWPORTS
+$macbook: 1440px;
+$laptop: 1366px;
+$small-laptop: 1280px;
+$tablet-big: 1024px;
+$tablet: 992px;
+$tablet-small: 991px;
+$mobile-big: 767px;
+$mobile: 600px;
+$mobile-medium: 480px;
+$mobile-small: 375px;
+$mobile-extra-small: 320px;

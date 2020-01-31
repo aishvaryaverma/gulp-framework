@@ -6,7 +6,8 @@
 	"scripts": {
 		"watch": "gulp watch",
 		"server": "live-server --watch=build --open=build --ignore=src",
-		"start": "npm-run-all --parallel watch server"
+		"start": "npm-run-all --parallel watch server",
+		"build": "gulp build"
 	},
 	"author": "Aishvarya",
 	"license": "ISC",

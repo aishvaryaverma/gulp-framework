@@ -1,0 +1,123 @@
+.mainFooter {
+    padding: 8rem 0 5rem;
+    background: #052a59;
+
+    &__links {
+        padding: 4rem 0;
+
+        h5 {
+            font-size: 1.6rem;
+            color: white;
+            text-transform: uppercase;
+        }
+        
+        p { color: rgba(white, 0.5); }
+
+        .navs {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            &.justify-end { justify-content: flex-end; }
+            
+            li {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-bottom: .5rem;
+                
+                &:last-child { margin-bottom: 0; }
+                
+                a {
+                    display: block;
+                    color: rgba(white, 0.5);
+                }
+
+                &:hover {
+                    a { color: white; }
+                }
+            }
+
+            &.adjusted {
+                @media screen and (max-width: $mobile-big) {
+                    margin-top: -5rem;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            @media (max-width: $mobile-big) {
+                padding: 1rem 0;
+                align-items: center;
+                justify-content: center;
+                &.justify-end { justify-content: center; }
+            }
+        }
+
+        @media (max-width: $tablet-small) {
+            padding: 4rem 0 0;
+        }
+        @media (max-width: $mobile-big) {
+            
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: flex-end;
+
+        a {
+            display: block;
+            font-family: $font-family-tertiary;
+            font-size: 1.6rem;
+            color: white;
+            margin-left: 2rem;
+            font-weight: $font-semi;
+            text-transform: uppercase;
+
+            span { font-size: 1.4rem; }
+
+            &:first-child { margin-left: 0; }
+
+            &:hover { color: $color-primary; }
+        }
+
+        @media (max-width: $tablet-small) {
+            padding: 2rem 0;
+            justify-content: flex-start;
+        }
+        @media (max-width: $mobile-big) {
+            justify-content: center;
+        }
+    }
+
+    &__copyrights {
+        padding: 2rem 0 0;
+        
+        p {
+            font-size: 1.5rem;
+            color: rgba(white, 0.5);
+
+            &.right {
+                text-align: right;
+                
+                @media (max-width: $mobile-big) {
+                    text-align: center;
+                }
+            }
+        }
+
+        a {
+            color: white;
+            &:hover { color: $color-primary; }
+        }
+    }
+    
+    @media (max-width: $tablet-small) {
+        padding: 4rem 0 2rem;
+    }
+
+    @media (max-width: $mobile-big) {
+        padding-top: 4rem;
+        text-align: center;
+        .text-right { text-align: center !important; }
+    }
+}
