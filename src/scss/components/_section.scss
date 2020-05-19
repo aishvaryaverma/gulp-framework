@@ -2,17 +2,6 @@
 .section {
 	padding: 6rem 0;
 
-	&.nopadding {
-		padding: 0 !important;
-	}
-	&.nopadding--top {
-		padding-top: 0 !important;
-	}
-	&.nopadding--bottom {
-		padding-bottom: 0 !important;
-	}
-
-	// Sizes
 	&.sm {
 		padding: 4rem 0;
 	}
@@ -25,13 +14,11 @@
 	&.xxl {
 		padding: 10rem 0;
 	}
-
-	// Bg colors
 	&.white {
 		background: white;
 	}
 	&.dark {
-		background: #353535;
+		background: $color-dark1;
 	}
 	&.primary {
 		background: $color-primary;
@@ -40,9 +27,6 @@
 		background: $color-secondary;
 	}
 	&.light {
-		background: $color-grey-light-1;
-	}
-	&.light__grey {
-		background: #dee2e2;
+		background: $color-light1;
 	}
 }

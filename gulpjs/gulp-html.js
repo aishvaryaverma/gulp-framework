@@ -3,10 +3,10 @@ import { src, dest } from 'gulp';
 // HTML packages
 import fileinclude from 'gulp-file-include';
 
-const path = './src/pages/';
+const path = './src/html/';
+
 const pages = [
-    path + 'index.html',
-    path + 'inner-page.html',
+    path + 'index.html'
 ];
 
 // FOR HTML PAGES

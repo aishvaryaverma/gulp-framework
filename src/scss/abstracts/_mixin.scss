@@ -11,38 +11,24 @@
 			#{$property}: #{$value};
 }
 
+/// Keyframes
+/// @param {*} $animation-name - Animation name
+/// @content [Animation css]
 
-/// Double Borders
-/// @param {Color} $colorOne [#3C3C3C] - Color One
-/// @param {Color} $colorTwo [#999999] - Color Two
-/// @param {Size} $radius [0] - Radius
-/// @require {mixin} css3-prefix
-/// @require {mixin} border-radius
-
-@mixin double-borders($colorOne: #3C3C3C, $colorTwo: #999999, $radius: 0) {
-	border: 1px solid $colorOne;
-	@include css3-prefix('box-shadow', 0 0 0 1px $colorTwo);
-	@include border-radius( $radius );
-}
-
-
-/// Triple Borders
-/// @param {Color} $colorOne [#3C3C3C] - Color One
-/// @param {Color} $colorTwo [#999999] - Color Two
-/// @param {Color} $colorThree [#000000] - Color Three
-/// @param {Size} $radius [0] - Radius
-/// @require {mixin} border-radius
-/// @require {mixin} css3-prefix
-
-@mixin triple-borders($colorOne: #3C3C3C, $colorTwo: #999999, $colorThree: #000000, $radius: 0) {
-	border: 1px solid $colorOne;
-	@include border-radius($radius);
-	@include css3-prefix('box-shadow', "0 0 0 1px #{$colorTwo}, 0 0 0 2px #{$colorThree}");
-}
-
-@mixin commonBoxShadow() {
-	@include css3BoxShadow(0 0 10px 4px rgba($color: #0424c6, $alpha: 0.15));
-}
-@mixin commonBoxShadow-small() {
-	@include css3BoxShadow(0 0 5px 2px rgba($color: #0424c6, $alpha: 0.08));
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+	@-ms-keyframes #{$animation-name} {
+		@content;
+	}
+	@-o-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
 }

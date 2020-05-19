@@ -1,17 +1,33 @@
 .custom-form {
-    padding: 0;
+	padding: 0;
 
-    .form-group {
-        margin-bottom: 2.5rem;   
-    }
+	.field {
+		margin-bottom: 2rem;
 
-    label {
-        font-size: $normal-font-size;
-        margin: 0 0 .5rem;
-    }
-    .form-control {
-        height: auto;
-        font-size: $normal-font-size;
-        padding: 1rem 1.5rem;
-    }
+		label {
+			font-weight: 600;
+		}
+		.input input,
+		.selection {
+			font-size: $font-size-default;
+			line-height: 2.6rem;
+			padding: 1rem 2rem;
+			border-color: #cccccc;
+			border-radius: 0 !important;
+
+			.icon {
+				top: 1.3rem;
+			}
+		}
+		.prompt.label {
+			font-weight: 700;
+			font-size: 1.2rem;
+		}
+		.errorMsg {
+			display: block;
+			font-size: 1.3rem;
+			color: red;
+			text-align: right;
+		}
+	}
 }

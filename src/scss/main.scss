@@ -1,39 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
 @import 'abstracts/variables';
 @import 'abstracts/mixin';
 @import 'abstracts/functions';
 
-@import 'vendors/slick';
-@import 'vendors/slick-theme';
+@import 'base/animations';
+@import 'base/base';
+@import 'base/helper';
+@import 'base/utilities';
+@import 'base/typography';
 
-@import "base/animations";
-@import "base/base";
-@import "base/fonts";
-@import "base/helper";
-@import "base/typography";
-@import "base/utilities";
+@import 'components/button';
+@import 'components/section';
+@import 'components/headings';
+@import 'components/forms';
 
+@import 'layouts/header';
+@import 'layouts/menu';
+@import 'layouts/grid';
+@import 'layouts/footer';
 
-@import "components/alert";
-@import "components/card";
-@import "components/button";
-@import "components/forms";
-@import "components/headings";
-@import "components/no-records";
-@import "components/pagination";
-@import "components/section";
-@import "components/spinner";
-@import "components/tabs";
-@import "components/table";
-@import "components/banner";
-@import "components/ads-banners";
-@import "components/sidebar";
-
-
-@import "layouts/header";
-@import "layouts/menu";
-@import "layouts/grid";
-@import "layouts/footer";
-
-
-@import "pages/home";
-@import "pages/inner-page";
+@import 'pages/landing';

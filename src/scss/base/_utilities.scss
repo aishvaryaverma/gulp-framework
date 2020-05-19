@@ -1,78 +1,11 @@
-.color-primary { color:$color-primary !important; }
-.color-secondary { color:$color-secondary !important; }
+.color-primary { color: $color-primary !important; }
+.color-secondary { color: $color-secondary !important; }
 
-.text-left { text-align: left; }
-.text-right { text-align: right; }
 .text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
 
-.uppercase { text-transform:uppercase; }
-.nouppercase { text-transform:none !important; }
+.uppercase { text-transform: uppercase; }
+.nouppercase { text-transform: none !important; }
 
 .cursor { cursor: pointer; }
-
-// Break Br Tags
-.breakBr__tablet-big {
-    @media (max-width: $tablet-big) {
-        br { display: none; }
-    }
-}
-
-// Shown 
-.shown--macbook {
-    display: none !important;
-    @media (max-width: $macbook) { display: block !important; }
-}
-.shown--laptop {
-    display: none !important;
-    @media (max-width: $laptop) { display: block !important; }
-}
-.shown--small-laptop {
-    display: none !important;
-    @media (max-width: $small-laptop) { display: block !important; }
-}
-.shown--small-laptop {
-    display: none !important;
-    @media (max-width: $small-laptop) { display: block !important; }
-}
-.shown--tablet {
-    display: none !important;
-    @media (max-width: $tablet) { display: block !important; }
-}
-.shown--tablet-small {
-    display: none !important;
-    @media (max-width: $tablet-small) { display: block !important; }
-}
-.shown--mobile-big {
-    display: none !important;
-    @media (max-width: $mobile-big) { display: block !important; }
-}
-
-// Hide
-.hide--macbook {
-    display: block !important;
-    @media (max-width: $macbook) { display: none !important; }
-}
-.hide--laptop {
-    display: block !important;
-    @media (max-width: $laptop) { display: none !important; }
-}
-.hide--small-laptop {
-    display: block !important;
-    @media (max-width: $small-laptop) { display: none !important; }
-}
-.hide--small-laptop {
-    display: block !important;
-    @media (max-width: $small-laptop) { display: none !important; }
-}
-.hide--tablet {
-    display: block !important;
-    @media (max-width: $tablet) { display: none !important; }
-}
-.hide--tablet-small {
-    display: block !important;
-    @media (max-width: $tablet-small) { display: none !important; }
-}
-.hide--mobile-big {
-    display: block !important;
-    @media (max-width: $mobile-big) { display: none !important; }
-}

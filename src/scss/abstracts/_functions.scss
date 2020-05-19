@@ -3,7 +3,7 @@
 // @access public
 // @type String
 
-$asset-base-path: '..' !default;
+$asset-base-path: '' !default;
 
 /// Asset URL builder
 /// @access private
@@ -29,5 +29,5 @@ $asset-base-path: '..' !default;
 /// @return {URL} - A `url()` function leading to the font
 /// @require {function} asset
 @function font($file) {
-  @return asset('fonts', $file);
+  @return asset('webfonts', $file);
 }

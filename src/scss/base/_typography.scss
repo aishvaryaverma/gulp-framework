@@ -1,105 +1,38 @@
 body {
 	font-family: $font-family-primary;
-	font-size: $normal-font-size;
+	font-size: $font-size-default;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $font-family-secondary;
+	font-family: $font-family-primary;
 	margin: 0 0 2rem;
-	line-height: 1.2;
-	color: #000000;
+	color: $color-dark3;
+	font-weight: $font-weight-bold;
+	line-height: $line-height-default;
 
-	&.white { color:#fff; }
-	
-	&.barlow { font-family: $font-family-primary; }
-	&.barlow-condensed { font-family: $font-family-tertiary; }
+	&.white { color: $color-white; }
 
-	&.elight { font-weight: 200; }
-	&.reverse { font-weight: $font-light; }
-	&.normal { font-weight: $font-normal; }
-	&.semi { font-weight: $font-semi; }
-	&.bold { font-weight: $font-bold; }
-	&.black { font-weight: $font-black; }
+	&.light { font-weight: $font-weight-light; }
+	&.normal { font-weight: $font-weight-normal; }
+	&.semi { font-weight: $font-weight-medium; }
 
-	&.capitalize { text-transform:capitalize; }
+	&.capitalize { text-transform: capitalize; }
 }
 
 p {
 	font-family: $font-family-primary;
-	font-size: $normal-font-size;
+	font-size: $font-size-default;
 	color: #333333;
-	line-height: 1.4;
 	margin-bottom: 2rem;
-	
-	&.nmb { margin-bottom: 0; }
-	&.small { font-size: 1.4rem; }
-	&.big { font-size: 1.8rem; }
-	&.white { color:#fff; }
-	&.semi { font-weight: $font-semi; }
-	@media (max-width: $mobile-medium) {
-		font-size: 1.3rem;
-	}
-}
+	line-height: $line-height-default;
 
-ul {
-	margin:0;
-	padding:0;
-	
-	&.bulletList {
-		padding:0 0 0 1.8rem;
-		
-		li {
-			display:list-item;
-			font-size: $normal-font-size;
-			line-height: 1.7;
-			margin-bottom: .5rem;
-			
-			&:last-child {margin-bottom:0;}
-		}
-		
-		&.alignRight {
-			text-align:right;
-			padding:0 1.6rem 0 0;
-			
-			li {
-				direction:rtl;
-			}
-		}
-		&.white {
-			li {
-				color:#fff;
-			}
-		}
-		&.primary {
-			li {
-				color:$color-primary;
-			}
-		}
-		&.extraMargin {
-			li {
-				margin-bottom: 2rem;
-			}
-		}
-	}
-}
+	&.white { color: $color-white; }
 
-.numberList {
-	padding-left: 2.2rem;
-	list-style-position: outside;
-	// list-style-type: decimal-leading-zero;
+	&.small { font-size: $font-size-small;}
+	&.medium { font-size: $font-size-medium;}
+	&.big { font-size: $font-size-big;}
 
-	li {
-		font-size: $normal-font-size;
-		padding-left: 1.5rem;
-		line-height: 1.4;
-		margin-bottom: 1rem;
-
-		&:last-child { margin-bottom: 0; }
-	}
-}
-
-.heading-small {
-	font-size: 1.2rem;
-	font-weight: 500;
-	color: $color-primary;
+	&.light { font-weight: $font-weight-light; }
+	&.semi { font-weight: $font-weight-medium; }
+	&.bold { font-weight: $font-weight-bold; }
 }

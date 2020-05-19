@@ -1,12 +1,4 @@
-.container {
-	width: 97.5%;
-	max-width: 142rem;
-
-	&.extra-padding {
-		padding: 0 8rem;
-
-		@media (max-width: $tablet-small) {
-			padding: 0 3rem;
-		}
-	}
+.wrapper {
+	padding: 0;
+	overflow: hidden;
 }

@@ -1,197 +1,33 @@
-.mainHeader {
-    // position: fixed;
-    // left: 0;
-    // top: 0;
-    // right: 0;
-    // z-index: 9999;
-    padding: 10px;
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	display: flex;
+	background: white;
+	box-shadow: $box-shadow-bottom;
 
-    $self: &;
+	&__menu {
+		display: flex;
+		padding: 1.5rem;
+		align-items: center;
+	}
 
-    &__top {
-        display: flex;
-        padding: 3rem 0;
-        align-items: center;
-        justify-content: space-between;
-        transition: all .4s ease-out;
-        
-        @media screen and (max-width: $tablet-big) {
-            padding: 1.8rem 0;
-        }
-    }
-
-    &__logo {
-        display: flex;
-
-        a {
-            display: block;
-            transition: none;
-
-            img {
-                max-width: 100%;
-                
-                @media (max-width: $tablet-big) {
-                    width: 15rem;
-                }
-                @media (max-width: $tablet) {
-                    width: 12rem;
-                }
-            }
-
-            @media (max-width: $tablet-big) {
-                // padding: 2rem 1rem;
-            }
-            @media (max-width: $mobile-big) {
-                
-            }
-        }
-    }
-
-    &__mainMenu {
-        padding: 0;
-
-        .menuHandle {
-            display: none;
-            width: 2.7rem;
-            cursor: pointer;
-
-            @media (max-width: $tablet-small) {
-                display: block;
-            }
-        }
-
-        > ul {
-            display: flex;
-            align-items: center;
-
-            > li {
-                position: relative;
-                z-index: 1;
-                display: block;
-                font-family: $font-family-tertiary;
-                font-size: 1.6rem;
-                margin-left: 3rem;
-                transition: all .3s ease-out;
-                border-bottom: 3px solid transparent;
-                
-                &:first-child { margin-left: 0; }
-
-                a {
-                    display: block;
-                    color: white;
-                    padding: 1.2rem 0 1rem;
-                    letter-spacing: .1rem;
-                    text-transform: uppercase;
-
-                    i {
-                        @media (max-width: $tablet-small) {
-                            margin-left: 1rem;
-                            margin-right: -2rem;
-                        }
-                    }
-                }
-
-                .dropdown-custom {
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    width: 18rem;
-                    background: rgba(black, 0.85);
-                    border-top: 3px solid $color-primary;
-
-                    opacity: 0;
-                    visibility: hidden;
-                    transform: translateY(5rem);
-                    transition: all .25s ease-out;
-
-                    li {
-                        display: block;
-                        
-                        a {
-                            padding: 1.5rem 2rem;
-
-                            &:hover {
-                                color: $color-primary;
-                                background: rgba(black, 1);
-                            }
-                        }
-                    }
-
-                    @media (max-width: $tablet-small) {
-                        display: none;
-                        position: static;
-                        opacity: 1;
-                        width: 100%;
-                        visibility: visible;
-                        transform: translateY(0);
-                        transition: none;
-                    }
-                }
-
-                &:hover {
-                    border-color: $color-primary;
-
-                    > a { color: $color-primary; }
-
-                    .dropdown-custom {
-                        opacity: 1;
-                        visibility: visible;
-                        transform: translateY(0);
-                    }
-
-                    @media (max-width: $tablet-big) {
-                        border-color: transparent;
-
-                        > a { color: white; }
-                    }
-                }
-                &.active {
-                    @media (max-width: $tablet-big) {
-                        border-color: $color-primary;
-                    }
-                }
-
-                @media (max-width: $tablet-big) {
-                    font-size: 1.4rem;
-                }
-
-                @media (max-width: $tablet-small) {
-                    width: 100%;
-                    margin-left: 0;
-                    text-align: center;
-                }
-            }
-
-            @media (max-width: $tablet-small) {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                padding-top: 3rem;
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
-                height: calc(100vh - 7.5rem);
-                background: rgba(black, 0.85);
-            }
-        }
-    }
-
-    &__bookApoint {
-        padding: 0;
-
-        @media (max-width: $tablet-small) {
-            display: none;
-        }
-    }
-
-    &--sticky {
-        background: rgba(black, 0.85);
-        box-shadow: 0 5px 5px 0 rgba(black, 0.09);
-
-        #{$self}__top {
-            padding: 2rem 0;
-        }
-    }
+	&__logo {
+		display: flex;
+		margin-left: 1rem;
+		// padding: 2rem 0 1rem;
+		padding: 2rem 0;
+		align-items: center;
+		svg { display: block; }
+		.text { font-size: $font-size-big; line-height: 3rem; }
+	}
+	
+	&__notification {
+		display: flex;
+		padding: 1.5rem;
+		margin-left: auto;
+		align-items: center;
+	}
 }

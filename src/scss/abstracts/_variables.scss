@@ -1,73 +1,52 @@
 // COLORS
-$color-primary: #c6a774;
-$color-primary-light: #c6a774;
-$color-primary-dark: #c6a774;
+$color-primary: #27397c;
+$color-secondary: #F06212;
+$color-tertiary: #257A33;
 
-$color-secondary: #052a59;
-$color-secondary-light: #052a59;
-$color-secondary-dark: #052a59;
-
-$color-tertiary: #121213;
-
-$color-skyblue-light: #f4f9ff;
-
-$color-grey-light-1: #abadb0;
-$color-grey-light-2: #f1f1f1;
-$color-grey-light-3: #f8f7fd;
-
-$color-grey-dark: #1d2630;
-$color-grey-dark-2: #666;
-$color-grey-dark-3: #333;
-
+$color-light1: #f7f7f7;
+$color-light2: #eee;
+$color-dark1: #999;
+$color-dark2: #666;
+$color-dark3: #333;
 $color-green: #00a900;
-$color-green-dark: #248e2e;
-
-$color-green2: #38c172;
-
 $color-red: #ff0000;
-$color-red-dark: #ff0000;
-
 $color-white: #fff;
 $color-black: #000;
 
-
 // FONT FAMILY
-$font-family-primary: 'Barlow', sans-serif;
-$font-family-secondary: 'Prata', serif;
-$font-family-tertiary: 'Barlow Condensed', sans-serif;
+$font-family-primary: 'Work Sans', sans-serif;
+$font-family-secondary: 'DM Mono', monospace;
 
 // FONT SIZES
-$tiny-font-size: 1.1rem;
-$small-font-size: 1.3rem;
-$medium-font-size: 1.4rem;
-$normal-font-size: 1.5rem;
-$large-font-size: 1.8rem;
-$big-font-size: 2.4rem;
-$huge-font-size: 3rem;
-
+$font-size-default: 1.4rem;
+$font-size-tiny: 1.1rem;
+$font-size-small: 1.2rem;
+$font-size-medium: 1.4rem;
+$font-size-large: 1.6rem;
+$font-size-big: 1.8rem;
 
 // FONT WEIGHT
-$font-normal: normal;
-$font-light: 300;
-$font-semi: 500;
-$font-bold: 600;
-$font-black: 700;
-
-// GRID
-$grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-horizontal: 6rem;
-$gutter-vertical-small: 6rem;
+$font-weight-normal: normal;
+$font-weight-light: 300;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
 
 // VIEWPORTS
 $macbook: 1440px;
-$laptop: 1366px;
-$small-laptop: 1280px;
+$laptop: 1336px;
+$desktop-small: 1280px;
 $tablet-big: 1024px;
 $tablet: 992px;
-$tablet-small: 991px;
-$mobile-big: 767px;
-$mobile: 600px;
-$mobile-medium: 480px;
+$table-small: 768px;
+$mobile-start: 767px;
+$mobile-big: 576px;
+$mobile: 480px;
 $mobile-small: 375px;
 $mobile-extra-small: 320px;
+
+// Customs
+$box-shadow-default: 0 0 10px 2px rgba(black, 0.07);
+$box-shadow-bottom: 0 5px 10px 2px rgba(black, 0.07);
+$box-shadow-right: 5px 0 10px 2px rgba(black, 0.07);
+$line-height-default: 1.4;
